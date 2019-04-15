@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class HelloServlet extends javax.servlet.http.HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response){
-
+        System.out.println("更新");
         try {
             response.getWriter().println("<h1>Hello Servlet!</h1>");
             response.getWriter().println(new Date().toLocaleString());
